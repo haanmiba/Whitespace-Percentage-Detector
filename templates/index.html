@@ -1,21 +1,23 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html>
 	<head>
+		<meta charset="utf-8">
 		<title>Detect Whitespace</title>
-		<link rel="stylesheet" href="/static/css/bootstrap.min.css">
-		<link rel="stylesheet" href="/static/css/file-button.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css">
 	</head>
 	<body>
-		<form id="upload-file" method="post" enctype="multipart/form-data">
-		    <div>
-		        <label for="select-file-btn">Select a file</label>
-		        <input id="select-file-btn" name="file" type="file" accept="image/png, image/jpg">
-		    </div>
-		</form>
+		<div class="ui one column stackable center aligned page padded grid">
+		   <div class="column twelve wide">
+				<form id="upload-file" class="ui form" method="post" enctype="multipart/form-data">
+					<button type="button" id="upload-file-btn" class="ui big blue button">Upload File</button>
+				</form>
+		   </div>
+		</div>
 		<div id="results">
+			
 		</div>
 	</body>
-	<script src="/static/js/jquery-3.2.1.min.js"></script>
-    <script src="/static/js/bootstrap.min.js"></script>
-	<script src="/static/js/main.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="/static/main.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js"></script>
 </html>
